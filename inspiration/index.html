@@ -1,0 +1,17 @@
+---
+layout: page
+title: Inspiration
+---
+
+<div class="inspirations">
+  {% for inspiration in site.data.inspirations %}
+      <div class="inspiration" data-anchor="inspiration{{ forloop.index }}">
+        <div class="inspiration-content">
+          {{ inspiration.content }}
+        </div>
+        <div class="inspiration-author">
+          {{ inspiration.title }}
+        </div>
+      </div>
+  {% endfor %}
+</div>
