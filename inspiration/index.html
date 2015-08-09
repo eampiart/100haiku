@@ -3,15 +3,21 @@ layout: page
 title: Inspiration
 ---
 
-<div class="inspirations">
+<div class="inspirations pure-g">
   {% for inspiration in site.data.inspirations %}
-      <div class="inspiration" data-anchor="inspiration{{ forloop.index }}">
-        <div class="inspiration-content">
-          {{ inspiration.content }}
-        </div>
-        <div class="inspiration-author">
-          {{ inspiration.title }}
+      <div class="col-lg-1-3 col-md-1-2 col-sm-1-1" data-anchor="inspiration{{ forloop.index }}">
+        <div class="inspiration">
+          <div class="inspiration-content">
+            <div class="inspiration-author">{{ inspiration.author }}</div>
+            <div class="inspiration-url"><a href="{{ inspiration.url }}" alt="Link to this haiku"><i class="fa fa-link"></i></a></div>
+            {{ inspiration.content }}
+          </div>
         </div>
       </div>
   {% endfor %}
 </div>
+
+<script type="text/javascript">
+  var cw = $('.inspiration').width();
+  $('.inspiration').css({'height':cw/4*3+'px'});
+</script>

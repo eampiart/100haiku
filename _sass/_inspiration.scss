@@ -6,13 +6,43 @@
 }
 
 .inspiration {
-	display: inline-block;
-	width: 19vw;
-	border-width: 1px;
-	border-style: solid;
-	margin: 0px;
+	font-family: 'Special Elite', sans-serif;
+	position: relative;
+	font-size: 1.8vw;
 }
 
 .inspiration-content {
-	font-family: 'Special Elite', sans-serif;
+	padding: 5% 5% 5% 15%;
+	position: absolute;
+	top: 50%;
+	@include translate(0%, -50%);
+}
+
+.inspiration-author {
+	opacity: 0.3;
+	font-size: 80%;
+	display: inline-block;
+}
+
+.inspiration-url {
+	opacity: 0.1;
+	font-size: 50%;
+	// float: right;
+	display: inline-block;
+}
+
+.inspiration-url:hover {
+	opacity: 1;
+}
+
+@media all and (max-width: 559px) {
+	.inspiration {
+		font-size: 4vw;
+	}
+}
+
+@media all and (min-width: 560px) and (max-width: 959px) {
+	.inspiration {
+		font-size: 3vw;
+	}
 }
