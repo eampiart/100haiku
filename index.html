@@ -4,7 +4,15 @@ layout: default
 
 {% for post in site.posts %}
     <div class="section post" data-anchor="section{{ post.title }}">
-      <span class="post-no">{{ post.title }}</span>
-      <span class="post-content">{{ post.content }}</span>
+      <div class="post-content">
+        {{ post.content }}
+      </div>
+      <div class="post-no">
+        {{ post.title }}
+      </div>
+      <div class="buttons">
+        <!-- <a href="" alt="Shareable picture of this haiku"><i class="fa fa-share"></i></a> -->
+        <a href="{{site.baseurl }}/#no{{post.title}}" alt="Link to this haiku"><i class="fa fa-link"></i></a>
+      </div>
     </div>
 {% endfor %}

@@ -98,15 +98,30 @@ header {
 	left: 50%;
 	@include translate(-50%, -50%);
 
-	font-size: 4vw;
+	font-size: 3.5vw;
 }
 
 .post-content p {
 	-webkit-font-smoothing: antialiased;
 }
 
+.buttons {
+	position: absolute;
+	top: 2vh;
+	left: 50%;
+	@include translate(-50%, 0%);
+}
+
+.buttons i {
+	opacity: 0.12;
+}
+
+.buttons i:hover {
+	opacity: 1;
+}
+
 body>div#fp-nav.right {
-	opacity: 0.08;
+	opacity: 0.06;
 	right: 8px;
 }
 
