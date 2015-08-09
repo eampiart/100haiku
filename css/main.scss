@@ -42,7 +42,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	opacity: 1;
 }
 
 ul {
@@ -61,18 +61,21 @@ header {
 	left: 0px;
 	width: 100%;
 	z-index: 1;
+	font-size: 1.8vw;
 }
 
 .site-title {
 	position: absolute;
 	top: 2vh;
 	left: 4vh;
+	opacity: 0.3;
 }
 
 .page-link {
 	position: absolute;
 	top: 2vh;
 	right: 4vh;
+	opacity: 0.3;
 }
 
 .post {
@@ -86,6 +89,7 @@ header {
 	position: absolute;
 	bottom: 4vh;
 	right: 4vh;
+	font-size: 2vw;
 }
 
 .post-content {
@@ -94,14 +98,43 @@ header {
 	left: 50%;
 	@include translate(-50%, -50%);
 
-	font-size: 2.5em;
+	font-size: 4vw;
 }
 
 .post-content p {
 	-webkit-font-smoothing: antialiased;
 }
 
-.onepage-pagination {
-	@include translate(0%, -50%);
-	opacity: 0.1;
+body>div#fp-nav.right {
+	opacity: 0.08;
+	right: 8px;
+}
+
+@media all and (max-width: 559px) {
+	.post-content {
+		left: 5%;
+		@include translate(0%, -50%);
+
+		font-size: 6.3vw;
+	}
+
+	header {
+		font-size: 3vw;
+	}
+
+	.post-no {
+		bottom: 5vh;
+		right: 5vh;
+		font-size: 4vw;
+	}
+}
+
+@media all and (min-width: 560px) and (max-width: 959px) {
+	.header {
+		font-size: 3vw;
+	}
+
+	.post-no {
+		font-size: 3vw;
+	}
 }
