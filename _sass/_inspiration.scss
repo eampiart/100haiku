@@ -1,5 +1,9 @@
 // _inspiration.scss
 
+.page-link {
+	text-decoration: underline;
+}
+
 .inspirations {
 	padding-top: 8vh;
 	padding-bottom: 8vh;
@@ -12,7 +16,7 @@
 }
 
 .inspiration-content {
-	padding: 5% 5% 5% 15%;
+	padding: 5% 5% 5% 12%;
 	position: absolute;
 	top: 50%;
 	@include translate(0%, -50%);
@@ -35,14 +39,24 @@
 	opacity: 1;
 }
 
+// xs
 @media all and (max-width: 559px) {
 	.inspiration {
-		font-size: 4vw;
+		font-size: 5.5vw;
+	}
+
+	.inspiration-url {
+		font-size: 65%;
 	}
 }
 
+// md
 @media all and (min-width: 560px) and (max-width: 959px) {
 	.inspiration {
-		font-size: 3vw;
+		font-size: 2.5vw;
+	}
+
+	.inspiration-url {
+		font-size: 60%;
 	}
 }
