@@ -3,50 +3,105 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family: 'Special Elite', cursive;
+$font-color: black;
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+@mixin aliasfix {
+	-ms-transform: translate3d( 0, 0, 0);
+	-webkit-transform: translate3d( 0, 0, 0);
+	-moz-transform: translate3d( 0, 0, 0);
+	-o-transform: translate3d( 0, 0, 0);
+	transform: translate3d( 0, 0, 0);
 }
 
+@mixin translate($x, $y) {
+	-ms-transform: translate($x, $y) translate3d( 0, 0, 0);
+	-webkit-transform: translate($x, $y) translate3d( 0, 0, 0);
+	-moz-transform: translate($x, $y) translate3d( 0, 0, 0);
+	-o-transform: translate($x, $y) translate3d( 0, 0, 0);
+	transform: translate($x, $y) translate3d( 0, 0, 0);
+}
 
+body {
+	margin: 0px;
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+	// -ms-scroll-snap-points-y: repeat(100vh);
+	// -ms-scroll-snap-type: mandatory;
+	// -webkit-scroll-snap-points-y: repeat(100vh);
+	// -webkit-scroll-snap-type: mandatory;
+	// scroll-snap-points-y: repeat(100vh);
+	// scroll-snap-type: mandatory;
+
+	font-family: Raleway, sans-serif;
+}
+
+a {
+	color: $font-color;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+p {
+	margin: 0px;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+.site-title {
+	position: absolute;
+	top: 2vh;
+	left: 4vh;
+}
+
+.page-link {
+	position: absolute;
+	top: 2vh;
+	right: 4vh;
+}
+
+.post {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	font-family: 'Special Elite', sans-serif;
+}
+
+.post-no {
+	position: absolute;
+	bottom: 4vh;
+	right: 4vh;
+}
+
+.post-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include translate(-50%, -50%);
+
+	font-size: 2.5em;
+}
+
+.post-content p {
+	-webkit-font-smoothing: antialiased;
+}
+
+.onepage-pagination {
+	@include translate(0%, -50%);
+	opacity: 0.1;
+}

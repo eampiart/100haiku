@@ -7,14 +7,23 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="content" id="fullpage">
         {{ content }}
-      </div>
     </div>
 
     {% include footer.html %}
 
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          anchors:[{% for post in site.posts %}'no{{ post.title }}'{% if forloop.last == false %},{% endif%}{% endfor %}],
+          loopTop: true,
+          loopBottom: true,
+          animateAnchor: false,
+          scrollBar: true
+        });
+      });
+    </script>
   </body>
 
 </html>

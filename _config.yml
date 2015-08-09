@@ -13,3 +13,4 @@ timezone: Europe/Zurich
 
 # Build settings
 markdown: kramdown
+host: 0.0.0.0

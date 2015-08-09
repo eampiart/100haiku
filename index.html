@@ -2,20 +2,9 @@
 layout: default
 ---
 
-<div class="home">
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-
-        <span>
-          {{ post.content }}
-        </span>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+{% for post in site.posts %}
+    <div class="section post" data-anchor="section{{ post.title }}">
+      <span class="post-no">{{ post.title }}</span>
+      <span class="post-content">{{ post.content }}</span>
+    </div>
+{% endfor %}
