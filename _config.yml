@@ -14,3 +14,11 @@ timezone: Europe/Zurich
 # Build settings
 markdown: kramdown
 host: 0.0.0.0
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      font-size: "100"
