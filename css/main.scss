@@ -64,11 +64,28 @@ header {
 	font-size: 1.8vw;
 }
 
-.site-title {
+footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 1;
+	font-size: 1.8vw;
+}
+
+.title {
 	position: absolute;
 	top: 2vh;
 	left: 4vh;
-	opacity: 0.3;
+	opacity: 0.2;
+}
+
+footer .name {
+	position: absolute;
+	bottom: 4vh;
+	left: 4vh;
+	font-size: 50%;
+	opacity: 0.2;
 }
 
 .page-link {
@@ -137,6 +154,10 @@ body>div#fp-nav.right {
 		font-size: 3vw;
 	}
 
+	footer .name {
+		font-size: 2.5vw;
+	}
+
 	.post-no {
 		bottom: 5vh;
 		right: 5vh;
@@ -145,8 +166,12 @@ body>div#fp-nav.right {
 }
 
 @media all and (min-width: 560px) and (max-width: 959px) {
-	.header {
-		font-size: 3vw;
+	header {
+		font-size: 2vw;
+	}
+
+	footer .name {
+		font-size: 1.5vw;
 	}
 
 	.post-no {
