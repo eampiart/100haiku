@@ -13,6 +13,8 @@
 	font-family: 'Special Elite', sans-serif;
 	position: relative;
 	font-size: 1.8vw;
+	overflow: hidden;
+	height: 43vh;
 }
 
 .inspiration-content {
@@ -20,6 +22,14 @@
 	position: absolute;
 	top: 50%;
 	@include translate(0%, -50%);
+
+	.inspiration-image {
+		text-align: center;
+	}
+	
+	img {
+		width: 100%;
+	}
 }
 
 .inspiration-author {
@@ -28,9 +38,16 @@
 	display: inline-block;
 }
 
+.inspiration-detail {
+	opacity: 0.2;
+	font-size: 60%;
+	display: inline-block;
+	float: right;
+}
+
 .inspiration-url {
 	opacity: 0.1;
-	font-size: 50%;
+	font-size: 60%;
 	// float: right;
 	display: inline-block;
 }

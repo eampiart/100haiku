@@ -1,39 +1,53 @@
-- author: Ezra Pond
+- kind: image
+  href: https://coyote.imgix.net/projects/100-days/luna-what-could-you-do-with-100-days-lighter.jpg?w=1200
+  url: https://thegreatdiscontent.com/100days
+
+- kind: text
+  author: Ezra Pond
   content: <p>The apparition of these faces in the crowd; //<br>Petals on a wet, black bough.</p>
   url: https://en.wikipedia.org/wiki/In_a_Station_of_the_Metro
 
-- author: Jack Kerouac
+- kind: text
+  author: Jack Kerouac
   content: <p>Alone, in old<br>clothes, sipping wine<br>Beneath the moon</p>
   url: http://www.kerouac.com/Beatquoteoftheweek/januaryninth.htm
 
-- author: Jack Kerouac
+- kind: text
+  author: Jack Kerouac
   content: <p>Morning sun -<br>The purple petals,<br>Four have fallen</p>
   url: http://www.kerouac.com/Beatquoteoftheweek/januaryninth.htm
 
-- author: Jack Kerouac
+- kind: text
+  author: Jack Kerouac
   content: <p>Early morning gentle rain,<br>two big bumblebees<br>Humming at their work</p>
   url: http://www.kerouac.com/Beatquoteoftheweek/januaryninth.htm
 
-- author: Jack Kerouac
+- kind: text
+  author: Jack Kerouac
   content: <p>The little worm<br>lowers itself from the roof<br>By a self shat thread</p>
   url: http://www.kerouac.com/Beatquoteoftheweek/januaryninth.htm
 
-- author: Jack Kerouac
+- kind: text
+  author: Jack Kerouac
   content: <p>Bluejay drinking at my<br>saucer of milk,<br>Throwing his head back</p>
   url: http://www.kerouac.com/Beatquoteoftheweek/januaryninth.htm
 
-- author: Jack Kerouac
+- kind: text
+  author: Jack Kerouac
   content: <p>Men and women<br>Yakking beneath<br>the eternal void</p>
   url: http://www.kerouac.com/Beatquoteoftheweek/januaryninth.htm
 
-- author: Jack Kerouac
+- kind: text
+  author: Jack Kerouac
   content: <p>I went in the woods<br>to meditate -<br>It was too cold</p>
   url: http://www.kerouac.com/Beatquoteoftheweek/januaryninth.htm
 
-- author: Jack Kerouac
+- kind: text
+  author: Jack Kerouac
   content: <p>Walking on water wasn't<br>Built in a day</p>
   url: http://www.kerouac.com/Beatquoteoftheweek/januaryninth.htm
 
-- author: Jack Kerouac
+- kind: text
+  author: Jack Kerouac
   content: <p>The sound of silence<br>is all the instruction<br>You'll get</p>
   url: http://www.kerouac.com/Beatquoteoftheweek/januaryninth.htm
