@@ -1,11 +1,17 @@
 - kind: text
-  author: Charles Bukowski
-  content: <p>Stop insisting on clearing your head, clear your f**king heart instead.</p>
-  detail: <p>Selected Letters Vol. 4</p>
+  author: Courtney Symons - The Lighthouse
+  content: What I Learned Writing a Haiku Every Day for 100 Days
+  detail: <a href="https://medium.com/the-lighthouse/what-i-learned-writing-a-haiku-every-day-for-100-days-ad23865ef760">on Medium</a>
+  url: https://medium.com/the-lighthouse/what-i-learned-writing-a-haiku-every-day-for-100-days-ad23865ef760
 
 - kind: image
   href: https://coyote.imgix.net/projects/100-days/luna-what-could-you-do-with-100-days-lighter.jpg?w=1200
   url: https://thegreatdiscontent.com/100days
+
+- kind: text
+  author: Charles Bukowski
+  content: <p>Stop insisting on clearing your head, clear your f**king heart instead.</p>
+  detail: <p>Selected Letters Vol. 4</p>
 
 - kind: text
   author: Ezra Pond
