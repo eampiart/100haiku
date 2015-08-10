@@ -51,3 +51,7 @@
   author: Jack Kerouac
   content: <p>The sound of silence<br>is all the instruction<br>You'll get</p>
   url: http://www.kerouac.com/Beatquoteoftheweek/januaryninth.htm
+
+- kind: image
+  href: https://s3.eu-central-1.amazonaws.com/100haiku/2015-07-11.jpg
+  url: https://s3.eu-central-1.amazonaws.com/100haiku/2015-07-11.jpg
