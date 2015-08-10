@@ -14,15 +14,15 @@ title: Inspiration
           <div class="inspiration-content">
             {% if inspiration.kind == "text" %}
               <div class="inspiration-author">{{ inspiration.author }}</div>
-              <div class="inspiration-url"><a href="{{ inspiration.url }}" target="_blank"><i class="fa fa-link"></i></a></div>
+              {% if inspiration.url != null %}<div class="inspiration-url"><a href="{{ inspiration.url }}" target="_blank"><i class="fa fa-link"></i></a></div>{% endif %}
               {{ inspiration.content }}
               <div class="inspiration-detail">{{ inspiration.detail }}</div>
             {% elsif inspiration.kind == "image" %}
-              <a href="{{ inspiration.url }}" target="_blank">
+              {% if inspiration.url != null %}<a href="{{ inspiration.url }}" target="_blank">{% endif %}
                 <div class="inspiration-image">
                   <img src="{{ inspiration.href }}">
                 </div>
-              </a>
+              {% if inspiration.url != null %}</a>{% endif %}
             {% endif %}
           </div>
         </div>
