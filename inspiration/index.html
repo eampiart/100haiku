@@ -23,5 +23,14 @@ title: Inspiration
 
 <script type="text/javascript">
   var cw = $('.inspiration').width();
+  var v = window.innerHeight;
+  var w = window.innerWidth;
+  var vh = v/100;
+  var vw = w/100;
   $('.inspiration').css({'height':cw/4*3+'px'});
+  // $('.inspiration').css({'height':(v-(8*vh))/2+'px'});
+
+  enquire.register("screen and (max-width:959px)", {
+    match : function() { console.log("query matched!") }
+  });
 </script>
